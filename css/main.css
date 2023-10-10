@@ -5,10 +5,13 @@
 }
 
 body {
-  background: #000000;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-  color: black;
-  font-size: 14pt;
+  display: grid;
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  background: repeating-linear-gradient(45deg, #262626 0 2.82843px, #313131 0 7.07107px);
+  filter: drop-shadow(4px 4px 13px rgba(0, 0, 0, 0.65));
+  font-family: Roboto;
 }
 .row{
   content: "";
@@ -20,11 +23,15 @@ body {
   padding: 10pt 30pt 5pt 30pt;
   height: 75%;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  -moz-hyphens: auto;
-  -o-hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto; 
+}
+.tworow{
+  content: "";
+  display: flex;
+  border-radius: 5px;
+  background: rgba(239, 235, 220, 0.9);
+  padding: 10pt 30pt 5pt 30pt;
+  height: 75%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .column{
   text-align: justify;
@@ -38,6 +45,21 @@ body {
   hyphens: auto;
   font-size: 18px;
   line-height: 150%;
+  z-index: 1;
+}
+.twocolumn{
+  text-align: justify;
+  font-size: 18px;
+  line-height: 150%;
+  float: left;
+  width: 50%;
+  padding: 30px;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  z-index: 1;
 }
 .yellow {
   color: #EDC00B;
@@ -258,6 +280,7 @@ body {
 }
 .el:hover .el__index {
   transform: translate3d(0, 0, 0);
+  font-size: 150pt;
 }
 .cont.s--el-active .el__index {
   transition: transform 0.5s, opacity 0.3s;
@@ -268,6 +291,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  font-size: 150pt;
 }
 .el__index-back {
   color: #000;
@@ -284,6 +308,7 @@ body {
   transform: translate3d(0, 100%, 0);
   transition: transform 0.5s 0.1s;
   color: transparent;
+  font-size: 150pt;
 }
 .el__index-overlay:before {
   content: attr(data-index);
