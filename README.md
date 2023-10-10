@@ -1,4 +1,4 @@
-# Weng Chun Kung Fu [https://karhunenloeve.github.io/WengchunErlangen/index.html](:trollface:)
+# Weng Chun Kung Fu [:trollface:](https://karhunenloeve.github.io/WengchunErlangen/index.html)
 ## Weng Chun bedeutet „Ewige Lebenskraft“
 Weng Chun zählt aufgrund seiner Prinzipien und Körperarbeit zu den sanften Kampfkünsten. Die Übenden erlernen die Fähigkeit, mit verschiedenen Kampfdistanzen umzugehen und sich auf realistische Weise sicher zu verteidigen. Ursprünglich aus dem Süd-Shaolin-Kloster stammend, vereint das Weng Chun Kung Fu auf einzigartige Weise die drei Aspekte der traditionellen chinesischen Kampfkunst:
 
