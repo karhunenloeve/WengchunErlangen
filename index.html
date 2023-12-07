@@ -12,6 +12,8 @@
       <link rel="stylesheet" href="css/texts.css">
       <link rel="stylesheet" href="css/img.css">
       <link rel="stylesheet" href="css/button.css">
+      <link rel="stylesheet" href="css/modal.css">
+      <link rel="stylesheet" href="css/gallery.css">
    </head>
    <body>
       <div class="cont s--inactive">
@@ -107,8 +109,7 @@
                      <div class="el__content">
                         <div class="el__text"><span class="yellow">Schul</span><span class="gold underlined underline-clip">leiter</span></div>
                         <div class="tworow">
-                           <div class="twocolumn" style="width: 70%">
-                              <img src="img/reichelt_loss.jpg" alt="Thomas Reichelt" class="reichelt">
+                           <div class="column" style="width: 45%">
                               <div class="horizontalgap" style="height:20px"></div>
                               <h3><span class="yellow">Sifu</span> <span class="gold">Thomas Reichelt</span></h3>
                               <p>Lehrer und Meister im Weng Chun Kung Fu</p>
@@ -130,8 +131,16 @@
                                  <li>1998 deutscher Meister in Tai Chi Pushing Hands.</li>
                               </ul>
                            </div>
-                           <div class="twocolumn" style="width: 30%">
-                              
+                           <div class="column container" style="width: 55%">
+        <img class="gallery_img" src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg" alt="Herd of horses">
+        <img class="gallery_img" src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg" alt="Baby Elephant">
+        <img class="gallery_img" src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg" alt="Koi Fish">
+        <img class="gallery_img" src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg" alt="Ibis Bird">
+        <img class="gallery_img" src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg" alt="Lemur">
+        <img class="gallery_img" src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="Berber Monkeys">
+        <img class="gallery_img" src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="Berber Monkeys">
+        <img class="gallery_img" src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="Berber Monkeys">
+        <img class="gallery_img" src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="Berber Monkeys">
                            </div>
                         </div>
                         <div class="el__close-btn"></div>
@@ -164,47 +173,244 @@
                               <p>Besuchen Sie gerne die <span class="circle-sketch-highlight">Kung Fu Schule in Erlangen,</span> und bei Fragen stehe ich persönlich zur Verfügung.</p>
                               <p>Gerne können Sie zur Probe <span class="circle-sketch-highlight">zwei Mal kostenlos</span> am Training teilnehmen. Mitzubringen sind lediglich bequeme Trainingskleidung und sauber Sportschuhe.</p>
                               <p>Ich biete auch <span class="circle-sketch-highlight">Privatunterricht</span> und Training in kleinen Gruppen an. Die Termine werden individuell vereinbart und liegen außerhalb der regulären Trainingszeiten.</p>
-                              <button class="button-53" role="button">Trainingsplan</button>
+                              <a class="cta" href="#trainingsplan"><button class="button-53" role="button">Trainingsplan</button></a>
+                              <div id="trainingsplan" class="modaloverlay">
+                                 <div class="modal">
+                                    <a href="#close" class="close">&times;</a>
+                                    <div>
+                                       <h3><span class="gold">Erwachsene</span></h3>
+                                       <center>
+                                          <table>
+                                             <tbody>
+                                                <tr>
+                                                   <td></td>
+                                                   <td style="text-align: center; font-weight: bold; color: gray;">Kinder</td>
+                                                   <td style="text-align: center;  font-weight: bold;"><span style="color: gray;">Kinder</span></td>
+                                                   <td style="text-align: center; font-weight: bold;">Jugendl./Erw.</td>
+                                                   <td style="text-align: center; font-weight: bold;">Jugendl./Erw.</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Montag</td>
+                                                   <td style="text-align: center; color: gray;">17:00 &#8211; 18:00</td>
+                                                   <td style="text-align: center;"></td>
+                                                   <td style="text-align: center;">18:10 &#8211; 19:10</td>
+                                                   <td style="text-align: center;">19:10 &#8211; 20:10</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Dienstag</td>
+                                                   <td style="text-align: center;"></td>
+                                                   <td style="text-align: center;"><span style="color: #ffff00;"> </span></td>
+                                                   <td style="text-align: center;"></td>
+                                                   <td style="text-align: center;"><span style="color: #ffff00;"> </span></td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Mittwoch</td>
+                                                   <td style="text-align: center; color: gray;"> 17:00 &#8211; 18:00</td>
+                                                   <td style="text-align: center; color: gray;">18:00 &#8211; 19:00</td>
+                                                   <td style="text-align: center;">19:10 &#8211; 20:10</td>
+                                                   <td style="text-align: center;">20:10 &#8211; 21:30</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Donnerstag</td>
+                                                   <td style="text-align: center; color: gray;"> 17:00 &#8211; 18:00</td>
+                                                   <td style="text-align: center; color: gray;">18:00 &#8211; 19:00</td>
+                                                   <td style="text-align: center;">19:00 &#8211; 20:00</td>
+                                                   <td style="text-align: center;">20:00 &#8211; 21:00</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Freitag</td>
+                                                   <td style="text-align: center; color: gray;"> 15:00 &#8211; 16:00</td>
+                                                   <td style="text-align: center; color: gray;">16:00 &#8211; 17:00</td>
+                                                   <td style="text-align: center;">17:00 &#8211; 18:00</td>
+                                                   <td style="text-align: center;">18:00 &#8211; 19:00</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </center>
+                                       <p><br>Falls Sie Bedenken haben, ob Sie zu alt oder vielleicht zu unsportlich für Weng Chun sind, möchte ich Sie beruhigen.</p>
+                                       <p>Weng Chun ist auch als die <span class="circle-sketch-highlight">sanfte Kampfkunst</span> des Shaolins bekannt. Dies zeigt sich im Training durch Übungen, die zur Verbesserung der Koordination, Geschicklichkeit und Fitness beitragen. Mit jeder Trainingseinheit gewinnen Sie mehr Körpergefühl und Entspannung, auch abseits des Alltags. Das Training basiert vorwiegend auf <span class="circle-sketch-highlight">Partnerübungen</span>, wobei es nicht erforderlich ist, einen Partner mitzubringen. Während des Unterrichts wird darauf geachtet, dass die Teilnehmer regelmäßig wechseln, um ihnen ein Gefühl für Distanz und Reichweite zu vermitteln. Sie werden im Training schrittweise an die <span class="circle-sketch-highlight">fünf Distanzen</span> herangeführt, die sich wiederum auf <span class="circle-sketch-highlight">drei Ebenen</span> aufteilen.</p>
+                                       <p>Ich würde mich freuen, Sie in der Kung Fu Schule Erlangen begrüßen zu dürfen.<br> Für Fragen stehe ich Ihnen gerne persönlich zur Verfügung.</p>
+                                       <cite>Sifu Thomas Reichelt</cite>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                            <div class="column">
                               <h3>Kinder <span class="gold">Kung Fu</span></h3>
                               <img src="img/kind_1.jpg" class="img">
                               <p>Ihr Kind kann ab 6 Jahren eine altersgerechte Selbstverteidigung erlernen und dabei spielerisch sein natürliches Körpergefühl entwickeln.</p>
                               <p>Spezielle Übungen stärken die Muskulatur und fördern gleichzeitig Flexibilität. Im Training werden Disziplin, Selbstbewusstsein, Konzentration und Durchhaltevermögen vermittelt, mit Respekt gegenüber Trainingspartnern. Elemente aus dem <span class="circle-sketch-highlight">Tiere Kung Fu</span> wie Tiger, Kranich, Leopard, Schlange, und Drache, sowie Yin/Yang-Bewegungen und die <span class="circle-sketch-highlight">fünf Elemente</span> (Feuer, Wasser, Erde, Metall und Holz) werden gelehrt. Haben wir Ihr Interesse geweckt? Wir freuen uns darauf, Ihr Kind und Sie in unserer Kung Fu Schule in Erlangen zu begrüßen.</p>
-                              <button class="button-53" role="button">Trainingsplan für Kinder</button>
+                              <a class="cta" href="#trainingsplankinder"><button class="button-53" role="button">Trainingsplan für Kinder</button></a>
+                              <div id="trainingsplankinder" class="modaloverlay">
+                                 <div class="modal">
+                                    <a href="#close" class="close">&times;</a>
+                                    <div>
+                                       <h3><span class="gold">Kinder</span></h3>
+                                       <center>
+                                          <table>
+                                             <tbody>
+                                                <tr>
+                                                   <td></td>
+                                                   <td style="text-align: center; font-weight: bold;">Kinder</td>
+                                                   <td style="text-align: center;  font-weight: bold;">Kinder</td>
+                                                   <td style="text-align: center; font-weight: bold; color: gray;">Jugendl./Erw.</td>
+                                                   <td style="text-align: center; font-weight: bold; color: gray;">Jugendl./Erw.</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Montag</td>
+                                                   <td style="text-align: center;">17:00 &#8211; 18:00</td>
+                                                   <td style="text-align: center;"></td>
+                                                   <td style="text-align: center; color: gray;">18:10 &#8211; 19:10</td>
+                                                   <td style="text-align: center; color: gray;">19:10 &#8211; 20:10</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Dienstag</td>
+                                                   <td style="text-align: center;"></td>
+                                                   <td style="text-align: center;"></td>
+                                                   <td style="text-align: center;"></td>
+                                                   <td style="text-align: center;"></td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Mittwoch</td>
+                                                   <td style="text-align: center;"> 17:00 &#8211; 18:00</td>
+                                                   <td style="text-align: center;">18:00 &#8211; 19:00</td>
+                                                   <td style="text-align: center; color: gray;">19:10 &#8211; 20:10</td>
+                                                   <td style="text-align: center; color: gray;">20:10 &#8211; 21:30</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Donnerstag</td>
+                                                   <td style="text-align: center;"> 17:00 &#8211; 18:00</td>
+                                                   <td style="text-align: center;">18:00 &#8211; 19:00</td>
+                                                   <td style="text-align: center; color: gray;">19:00 &#8211; 20:00</td>
+                                                   <td style="text-align: center; color: gray;">20:00 &#8211; 21:00</td>
+                                                </tr>
+                                                <tr>
+                                                   <td style="font-weight: bold;">Freitag</td>
+                                                   <td style="text-align: center;"> 15:00 &#8211; 16:00</td>
+                                                   <td style="text-align: center;">16:00 &#8211; 17:00</td>
+                                                   <td style="text-align: center; color: gray;">17:00 &#8211; 18:00</td>
+                                                   <td style="text-align: center; color: gray;">18:00 &#8211; 19:00</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </center>
+                                       <p><br>Ab einem Alter von <span class="circle-sketch-highlight">6 Jahren</span> kann Ihr Kind bei uns eine altersgerechte Form der Selbstverteidigung erlernen und dabei spielerisch sein natürliches Körpergefühl entwickeln. Spezielle Übungen zielen darauf ab, die Muskulatur zu kräftigen und gleichzeitig deren Dehnbarkeit und Geschmeidigkeit zu fördern. Im Training werden wichtige Eigenschaften wie Disziplin, Selbstbewusstsein, Konzentrationsfähigkeit und Durchhaltevermögen vermittelt, wobei die Achtung gegenüber dem Trainingspartner stets im Vordergrund steht.</p>
+                                       <p>Wir lehren Elemente aus dem <span class="circle-sketch-highlight">Tier-Kung-Fu</span>, darunter Techniken, die von Tieren wie dem Tiger, Kranich, Leopard, Schlange und Drachen inspiriert sind, sowie <span class="circle-sketch-highlight">Yin-und-Yang-Bewegungen</span> und das Erleben der <span class="circle-sketch-highlight">Elemente</span> Feuer, Wasser, Erde, Metall und Holz.</p>
+                                       <p>Ich freue mich darauf, Ihr Kind und Sie in meiner Kung Fu Schule in Erlangen begrüßen zu dürfen.<br>
+                                          Für Fragen stehe ich Ihnen jederzeit gerne persönlich zur Verfügung.
+                                       </p>
+                                       <cite>Sifu Thomas Reichelt</cite>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                            <div class="column">
                               <h3>Aus<span class="gold">bildung</h3>
                               <h4>Schärpen</h4>
                               <i class="fa-duotone fa-uniform-martial-arts"></i>
                               <p style="font-size: 24px;">
-                                <i class="fa-solid fa-bookmark" style="color: white"></i>
-                                <i class="fa-solid fa-bookmark" style="color: yellow"></i>
-                                <i class="fa-solid fa-bookmark" style="color: orange"></i>
-                                <i class="fa-solid fa-bookmark" style="color: green"></i>
-                                <i class="fa-solid fa-bookmark" style="color: blue"></i>
-                                <i class="fa-solid fa-bookmark" style="color: violet"></i>
-                                <i class="fa-solid fa-bookmark" style="color: red"></i>
-                                <i class="fa-solid fa-bookmark" style="color: brown"></i>
-                                <i class="fa-solid fa-bookmark"></i>
+                                 <i class="fa-solid fa-bookmark" style="color: white"></i>
+                                 <i class="fa-solid fa-bookmark" style="color: yellow"></i>
+                                 <i class="fa-solid fa-bookmark" style="color: orange"></i>
+                                 <i class="fa-solid fa-bookmark" style="color: green"></i>
+                                 <i class="fa-solid fa-bookmark" style="color: blue"></i>
+                                 <i class="fa-solid fa-bookmark" style="color: violet"></i>
+                                 <i class="fa-solid fa-bookmark" style="color: red"></i>
+                                 <i class="fa-solid fa-bookmark" style="color: brown"></i>
+                                 <i class="fa-solid fa-bookmark"></i>
                               </p>
                               <div class="horizontalgap" style="height:30px"></div>
                               <h4>Ausbildungsvoraussetzungen</h4>
                               <ul class="content">
-                                <li>Gesundheitsattest.</li>
-                                <li>Polizeiliches Führungszeugnis.</li>
-                                <li>Vorkenntnisse sind nicht erforderlich.</li>
-                                <li>Quereinstieg nach Anfrage möglich.</li>
-                                <li>Aktueller Nachweis des erste Hilfe Kurses.</li>
+                                 <li>Gesundheitsattest.</li>
+                                 <li>Polizeiliches Führungszeugnis.</li>
+                                 <li>Vorkenntnisse sind nicht erforderlich.</li>
+                                 <li>Quereinstieg nach Anfrage möglich.</li>
+                                 <li>Aktueller Nachweis des erste Hilfe Kurses.</li>
                               </ul>
-                              <button class="button-54" role="button">Trainerausbildung (rote Schärpe)</button>
+                              <a class="cta" href="#redsharp"><button class="button-54" role="button">Trainerausbildung (rote Schärpe)</button></a>
+                              <div id="redsharp" class="modaloverlay">
+                                 <div class="modal">
+                                    <a href="#close" class="close">&times;</a>
+                                    <div>
+                                       <div class="transrow" style="margin: 0 auto">
+                                          <div class="twocolumn">
+                                             <h4>Praxis</h4>
+                                             <ul class="content">
+                                                <li>Qi-Arbeit.</li>
+                                                <li>Formenarbeit.</li>
+                                                <li>Partnerarbeit.</li>
+                                                <li>Selbstverteidigung.</li>
+                                             </ul>
+                                             <h4>Theorie</h4>
+                                             <ul class="content">
+                                                <li>Geschichte und Gegenwart.</li>
+                                                <li>Prinzipien, Konzepte und Strategien.</li>
+                                                <li>Selbstorganisation.</li>
+                                                <li>Unterrichtsaufbau.</li>
+                                                <li>Lehrfähigkeit.</li>
+                                                <li>Sozialkompetenz.</li>
+                                             </ul>
+                                          </div>
+                                          <div class="twocolumn">
+                                             <h4>Ausbildungsumfang</h4>
+                                             <ul class="content">
+                                                <li>2 Jahre.</li>
+                                                <li>300 Unterrichtseinheiten.</li>
+                                                <li>3 Wochenend-Blöcke.</li>
+                                                <li>12 begleitende Einzelcoachings.</li>
+                                                <li>6 Monate Assistenzzeit.</li>
+                                                <li>1 Unterrichtsprobe mit Supervision.</li>
+                                                <li>Mentorenbegleitung.</li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                               <div class="horizontalgap" style="height:20px"></div>
                               <h4>Ausbildungsvoraussetzungen</h4>
                               <ul class="content">
-                                <li>Zertifikat Trainer (rote Schärpe).</li>
+                                 <li>Zertifikat Trainer (rote Schärpe).</li>
                               </ul>
-                              <button class="button-55" role="button">Meisterausbildung (schwarze Schärpe)</button>
-
+                              <a class="cta" href="#blacksharp"><button class="button-55" role="button">Meisterausbildung (schwarze Schärpe)</button></a>
+                              <div id="blacksharp" class="modaloverlay">
+                                 <div class="modal">
+                                    <a href="#close" class="close">&times;</a>
+                                    <div>
+                                       <div class="transrow" style="margin: 0 auto">
+                                          <div class="twocolumn">
+                                             <h4>Praxis</h4>
+                                             <ul class="content">
+                                                <li>Begleitetes Unterrichten.</li>
+                                                <li>Selbständiges Unterrichten in Basisstufe.</li>
+                                                <li>Selbständiges Unterrichten in Mittelstufe.</li>
+                                             </ul>
+                                             <h4>Theorie</h4>
+                                             <ul class="content">
+                                                <li>Kampfkonzepte.</li>
+                                                <li>Prinzipien, Konzepte und Strategien.</li>
+                                                <li>Grundlagen des Qi-Gong.</li>
+                                                <li>Prinzipien versus Technikkämpfen.</li>
+                                                <li>Geschichte des Shaolin Weng Chun.</li>
+                                             </ul>
+                                          </div>
+                                          <div class="twocolumn">
+                                             <h4>Ausbildungsumfang</h4>
+                                             <ul class="content">
+                                                <li>3 Jahre.</li>
+                                                <li>300 Unterrichtseinheiten.</li>
+                                                <li>5 Wochenend-Blöcke.</li>
+                                                <li>12 begleitende Einzelcoachings.</li>
+                                                <li>6 Monate Assistenzzeit.</li>
+                                                <li>3 Unterrichtsprobe mit Supervision.</li>
+                                                <li>Mentorenbegleitung.</li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                         <div class="el__close-btn"></div>

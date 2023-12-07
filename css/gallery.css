@@ -1,0 +1,30 @@
+.gallery_img {
+    width: 27.33%;
+    min-width: 200px;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fefae0;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition-duration: 1s;
+}
+
+.gallery_img:hover {
+    float: left;
+    border: 5px solid #fff;
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+    z-index: 2;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
