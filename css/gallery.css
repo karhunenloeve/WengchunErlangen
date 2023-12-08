@@ -9,6 +9,7 @@
     -webkit-filter: sepia(100%);
     filter: sepia(100%);
     transition-duration: 1s;
+    z-index: 1;
 }
 
 .gallery_img:hover {
