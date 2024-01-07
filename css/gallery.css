@@ -3,7 +3,7 @@
     min-width: 200px;
     object-fit: cover;
     object-position: bottom;
-    margin: 10px;
+    margin: 7px;
     float: left;
     border: 10px solid #fefae0;
     -webkit-filter: sepia(100%);
@@ -14,10 +14,10 @@
 
 .gallery_img:hover {
     float: left;
-    border: 5px solid #fff;
-    -webkit-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
+    border: 7px solid #fff;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     z-index: 2;
     -webkit-filter: none;
     filter: none;
